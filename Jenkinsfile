@@ -35,7 +35,7 @@ spec:
         container('kaniko') {
             sh '''
             pwd
-            /kaniko/executor --dockerfile=./Dockerfile --context=/home/jenkins/agent/workspace/cart --destination=gcr.io/gj-playground/cart --destination=gcr.io/gj-playground/cart
+            /kaniko/executor --dockerfile=./Dockerfile --context=/home/jenkins/agent/workspace/cartservice --destination=gcr.io/gj-playground/cart --destination=gcr.io/gj-playground/cart
             '''
         }
       }
